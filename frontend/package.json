@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "react-markdown": "^8.0.7",
+    "remark-gfm": "^3.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "@huggingface/inference": "^4.6.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

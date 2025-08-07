@@ -2,6 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Markdown content styling */
+.markdown-content {
+  @apply text-gray-100;
+}
+
+.markdown-content a {
+  @apply text-blue-400 hover:underline;
+}
+
+.markdown-content pre {
+  @apply rounded-lg overflow-x-auto my-4;
+}
+
+.markdown-content img {
+  @apply max-w-full h-auto rounded-lg my-4;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-gray-500 pl-4 italic my-4 text-gray-300;
+}
+
+.markdown-content hr {
+  @apply my-6 border-gray-600;
+}
+
+.markdown-content table {
+  @apply w-full border-collapse my-4;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+  @apply p-2 border border-gray-600;
+}
+
+.markdown-content table th {
+  @apply bg-gray-700;
+}
+
+.markdown-content code:not([class*="language-"]) {
+  @apply bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono text-gray-200;
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
